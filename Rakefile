@@ -5,10 +5,10 @@ require 'merb-core'
 require 'merb-core/tasks/merb'
 
 GEM_NAME = "merb_couchrest"
-GEM_VERSION = "0.1.1"
+GEM_VERSION = "0.1.2"
 AUTHOR = "Alex Veenendaal"
 EMAIL = "odogono@gmail.com"
-HOMEPAGE = "http://merbivore.com/"
+HOMEPAGE = "http://github.com/mohiam/merb_couchrest"
 SUMMARY = "Merb plugin that provides support for CouchRest Models"
 
 spec = Gem::Specification.new do |s|
@@ -28,10 +28,6 @@ spec = Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.files = %w(LICENSE README Rakefile TODO Generators) + Dir.glob("{lib,spec}/**/*")
   
-end
-
-Rake::GemPackageTask.new(spec) do |pkg|
-  pkg.gem_spec = spec
 end
 
 desc "install the plugin as a gem"
