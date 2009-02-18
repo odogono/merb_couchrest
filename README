@@ -1,0 +1,22 @@
+merb_couchrest
+==============
+
+A plugin for the Merb framework that provides support for CouchRest Models.
+
+Currently based around CouchRest::ExtendedDocument introduced by Matt Aimonetti.
+
+
+
+= Connection options
+
+Merb CouchRest plugin uses config/database.yml for connection configuration.
+
+Options are:
+
+* host. provide a string or an array of strings to attempt connections with
+* database. 
+
+
+Uses the CouchDB client CouchRest by Chris Anderson.
+
+Hacked together by studying the merb_sequel plugin.
