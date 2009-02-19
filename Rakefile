@@ -5,14 +5,13 @@ require 'merb-core'
 require 'merb-core/tasks/merb'
 
 GEM_NAME = "merb_couchrest"
-GEM_VERSION = "0.1.2"
-AUTHOR = "Alex Veenendaal"
+GEM_VERSION = "0.1.3"
+AUTHOR = "Alexander Veenendaal"
 EMAIL = "odogono@gmail.com"
 HOMEPAGE = "http://github.com/mohiam/merb_couchrest"
-SUMMARY = "Merb plugin that provides support for CouchRest Models"
+SUMMARY = "Merb ORM plugin that provides support for CouchRest Models"
 
 spec = Gem::Specification.new do |s|
-  s.rubyforge_project = 'merb'
   s.name = GEM_NAME
   s.version = GEM_VERSION
   s.platform = Gem::Platform::RUBY
@@ -24,7 +23,7 @@ spec = Gem::Specification.new do |s|
   s.email = EMAIL
   s.homepage = HOMEPAGE
   s.add_dependency('merb', '>= 1.0.9')
-  s.add_dependency("couchrest",    ">= 0.13.3")
+  s.add_dependency("mattetti-couchrest",    ">= 0.14")
   s.require_path = 'lib'
   s.files = %w(LICENSE README Rakefile TODO Generators) + Dir.glob("{lib,spec}/**/*")
   
