@@ -5,7 +5,7 @@ require 'merb-core'
 require 'merb-core/tasks/merb'
 
 GEM_NAME = "merb_couchrest"
-GEM_VERSION = "0.1.3"
+GEM_VERSION = "0.1.4"
 AUTHOR = "Alexander Veenendaal"
 EMAIL = "odogono@gmail.com"
 HOMEPAGE = "http://github.com/mohiam/merb_couchrest"

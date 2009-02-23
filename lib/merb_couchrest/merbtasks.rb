@@ -12,7 +12,7 @@ namespace :couchrest do
     task :clear => :merb_start do
       
       Merb::CouchRestSessionStore.all.each{ |doc| doc.database.delete_doc(doc,true) }
-      Merb::CouchRestSessionStore.bulk_save()
+      Merb::CouchRestSessionStore.database.bulk_save()
       
     end
     
