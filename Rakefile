@@ -5,7 +5,7 @@ require 'merb-core'
 require 'merb-core/tasks/merb'
 
 GEM_NAME = "merb_couchrest"
-GEM_VERSION = "0.1.4"
+GEM_VERSION = "0.1.6"
 AUTHOR = "Alexander Veenendaal"
 EMAIL = "odogono@gmail.com"
 HOMEPAGE = "http://github.com/mohiam/merb_couchrest"
@@ -23,7 +23,7 @@ spec = Gem::Specification.new do |s|
   s.email = EMAIL
   s.homepage = HOMEPAGE
   s.add_dependency('merb', '>= 1.0.9')
-  s.add_dependency("mattetti-couchrest",    ">= 0.14")
+  s.add_dependency("mattetti-couchrest",    ">= 0.20")
   s.require_path = 'lib'
   s.files = %w(LICENSE README Rakefile TODO Generators) + Dir.glob("{lib,spec}/**/*")
   

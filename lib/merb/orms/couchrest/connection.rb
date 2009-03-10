@@ -63,6 +63,9 @@ module Merb
                 
                   # set the default database
                   ::CouchRest::Document.use_database( database_connection )
+                  
+                  # also store this config ?
+                  Merb::Config[:couchrest_default_database] = database_connection
 
                   # we are done - return with the result
                   return database_connection
