@@ -14,7 +14,7 @@ Merb CouchRest plugin uses config/database.yml for connection configuration.
 Options are:
 
 * host. provide a string or an array of strings to attempt connections with
-* database. 
+* database.
 
 
 Uses the CouchDB client CouchRest by Chris Anderson.
