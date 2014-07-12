@@ -26,7 +26,7 @@ spec = Gem::Specification.new do |s|
   s.add_dependency("mattetti-couchrest",    ">= 0.20")
   s.require_path = 'lib'
   s.files = %w(LICENSE README Rakefile TODO Generators) + Dir.glob("{lib,spec}/**/*")
-  
+
 end
 
 desc "install the plugin as a gem"
